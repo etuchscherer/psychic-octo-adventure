@@ -1,11 +1,13 @@
-%h1.page-header
+%h1.span12{:id => "<%= 5 * 5 %>"}
   %small my name is
   Eric Tuchscherer
 
-%p I'm a software engineer living in the Seattle Area
+%h4.span12
+  %small I'm a software engineer living in the Seattle Area
 
-.row
-  %h3.span12 Recent projects I've worked on
+%hr.separator.span12
+
+%h4.span12 Recent projects
 
 .span3.clear-well
   %a{:href => "#PopSalad", :'data-toggle' => "modal", :role => 'button' }
@@ -44,39 +46,33 @@
   .modal-body This is the body
   .modal-footer This is the footer
 
-.row
-  %h3.span12 Recently used services
+%hr.separator.span12
 
-.span3
-  %b blah blah
-  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id nisl enim, sit amet aliquet felis. Mauris       |
-  in ultricies erat. Sed dui nibh, semper sit amet tincidunt aliquam, pretium id ligula. Duis urna nunc, auctor at      |
-  porta vitae, consectetur et dolor. Suspendisse molestie mollis felis quis semper. Mauris ut mi ligula, elementum      |
-  interdum massa. Aliquam tincidunt dictum justo quis laoreet. Aenean quis magna enim, commodo lacinia mi. Nulla        |
-  ultricies, nulla bibendum laoreet ullamcorper, elit sem congue quam, vel scelerisque nisl enim vitae sapien.          |
-  Quisque ut lacus lorem. Praesent at quam ante, et gravida nulla. Pellentesque vestibulum commodo enim, ornare         |
-  egestas nunc sollicitudin ut. Pellentesque eu quam a felis eleifend suscipit nec vel augue. Pellentesque              |
-  condimentum ligula at lacus egestas pretium eget a tellus.                                                            |
+%h4.span12 Preferences
 
-.span3
-  %b blah blah
-  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id nisl enim, sit amet aliquet felis. Mauris       |
-  in ultricies erat. Sed dui nibh, semper sit amet tincidunt aliquam, pretium id ligula. Duis urna nunc, auctor at      |
-  porta vitae, consectetur et dolor. Suspendisse molestie mollis felis quis semper. Mauris ut mi ligula, elementum      |
-  interdum massa. Aliquam tincidunt dictum justo quis laoreet. Aenean quis magna enim, commodo lacinia mi. Nulla        |
-  ultricies, nulla bibendum laoreet ullamcorper, elit sem congue quam, vel scelerisque nisl enim vitae sapien.          |
-  Quisque ut lacus lorem. Praesent at quam ante, et gravida nulla. Pellentesque vestibulum commodo enim, ornare         |
-  egestas nunc sollicitudin ut. Pellentesque eu quam a felis eleifend suscipit nec vel augue. Pellentesque              |
-  condimentum ligula at lacus egestas pretium eget a tellus.                                                            |
+.span3.clear-well
+  %h5 Frameworks
+  %ul.unstyled.span3
+    %li Zend
+    %li Symfony
+    %li Rails
+    %li jQuery
+    %li Bootstrap
 
-.span3
-  %b blah blah
-  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id nisl enim, sit amet aliquet felis. Mauris       |
-  in ultricies erat. Sed dui nibh, semper sit amet tincidunt aliquam, pretium id ligula. Duis urna nunc, auctor at      |
-  porta vitae, consectetur et dolor. Suspendisse molestie mollis felis quis semper. Mauris ut mi ligula, elementum      |
-  interdum massa. Aliquam tincidunt dictum justo quis laoreet. Aenean quis magna enim, commodo lacinia mi. Nulla        |
-  ultricies, nulla bibendum laoreet ullamcorper, elit sem congue quam, vel scelerisque nisl enim vitae sapien.          |
-  Quisque ut lacus lorem. Praesent at quam ante, et gravida nulla. Pellentesque vestibulum commodo enim, ornare         |
-  egestas nunc sollicitudin ut. Pellentesque eu quam a felis eleifend suscipit nec vel augue. Pellentesque              |
-  condimentum ligula at lacus egestas pretium eget a tellus.                                                            |
+.span3.clear-well
+  %h5 Data
+  %ul.unstyled.span3
+    %li MySql
+    %li PostgreSql
+    %li Riak
+    %li Sqlite
+
+.span3.clear-well
+  %h5 Other
+  %ul.unstyled.span3
+    %li Git
+    %li Netbeans
+    %li Oauth
+    %li Linux
+    %li Agile
 
