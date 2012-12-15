@@ -1,5 +1,7 @@
 class StaticController < ApplicationController
   def index
-    @foo = 'muddafoo'
+  end
+
+  def contact
   end
 end
