@@ -3,6 +3,7 @@ Portfolio::Application.routes.draw do
   match '/' => 'static#index'
   get "static/index"
   get "static/contact"
+  get "static/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

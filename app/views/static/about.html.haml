@@ -1,0 +1,33 @@
+.span6.offset3.well
+  #myCarousel.carousel.slide
+    .carousel-inner{:style => 'overflow:hidden;display:block;position:relative;width:100%'}
+      .active.item
+        %img{:src => '/assets/carousel/kentucky.jpg'}
+        .carousel-caption
+          %p I was born in Louisville, Ky…
+      .item
+        %img{:src => '/assets/carousel/grandparents.jpg'}
+        .carousel-caption
+          %p and raised by my grandparents in New Jersey.
+      .item
+        %img{:src => '/assets/carousel/newyork.jpg'}
+        .carousel-caption
+          %p Looking south from the Empire State Building
+      .item
+        %img{:src => '/assets/carousel/qatar.jpg'}
+        .carousel-caption
+          %p I was in the navy
+      .item
+        %img{:src => '/assets/carousel/songbukdong.jpg'}
+        .carousel-caption
+          %p and traveled the world
+      .item
+        %img{:src => '/assets/carousel/'}
+        .carousel-caption
+          %p I fell in love with Washington, and decided to settle here.
+      .item
+        %img{:src => '/assets/carousel/'}
+        .carousel-caption
+          %p I met my wife
+    .carousel-control.left{:href => '#myCarousel', :'data-slide' => 'prev'} &lsaquo;
+    .carousel-control.right{:href => '#myCarousel', :'data-slide' => 'next'} &rsaquo;
