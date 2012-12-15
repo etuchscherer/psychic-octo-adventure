@@ -1,78 +1,99 @@
-%h1.span12{:id => "<%= 5 * 5 %>"}
+
+%h1.page-header{:id => "<%= 5 * 5 %>"}
   %small my name is
   Eric Tuchscherer
 
-%h4.span12
+%h4
   %small I'm a software engineer living in the Seattle Area
 
-%hr.separator.span12
+.row
+  .span4.column
+    %h4
+      %a.column-heading{:href => "#PopSalad", :'data-toggle' => "modal", :role => 'button' }
+        %b Pop Salad
+    %p.even Pop Salad is the gamified way of getting the most current pop news. The application crawls the web and gathers    |
+    relevant stories for celebrity gossip and pop culture. It then does some magic to figure out who is the most buzz worthy  |
+    celebrity at that moment. The site includes e-commerce, mini-games, internal and external api's, charting and a very           |
+    powerful back-end.                                                                                                  |
 
-%h4.span12 Recent projects
+  #PopSalad.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
+    .modal-header This is the header
+    .modal-body This is the body
+    .modal-footer This is the footer
 
-.span3.clear-well
-  %a{:href => "#PopSalad", :'data-toggle' => "modal", :role => 'button' }
-    %b Pop Salad
-  %p.even Pop Salad is a gamified way of getting the most current news. The app crawls the web and gathers recent and      |
-  relevant stories for celebrity gossip and pop culture. The app itself features mini games, charting and a very      |
-  powerful back-end.                                                                                                  |
+  .span4.column
+    %h4
+      %a.column-heading{:href => "#FeralMotion", :'data-toggle' => "modal", :role => 'button' }
+        %b Feral Motion
+    %p.even Feral Motion is a really neat RFID activated camera system designed for action sports. Feral Motion's       |
+    hi-tech cameras sense when a user crosses it's path. It then auto-magicly records video of the target and uploads   |
+    immediately, out-of-the-box. Basically, you ride down the mountain, have video shot, and by the time you finish     |
+    your lap, you're sharing that video with your friends.                                                              |
 
-#PopSalad.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
-  .modal-header This is the header
-  .modal-body This is the body
-  .modal-footer This is the footer
+  #FeralMotion.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
+    .modal-header This is the header
+    .modal-body This is the body
+    .modal-footer This is the footer
 
-.span3.clear-well
-  %a{:href => "#FeralMotion", :'data-toggle' => "modal", :role => 'button' }
-    %b Feral Motion
-  %p.even Feral Motion really neat RFID activated camera system geared towards action sports. Feral Motion's cameras can   |
-  sense when a user crosses it's path. It then auto-magicly records video and posts it to a users profile online.     |
-  basicly, you can ride down a mountain, have video shot, and by the time you get to the end of your run, you can     |
-  share that video with your friends.                                                                                 |
+  .span4.column
+    %h4
+      %a.column-heading{:href => "#NerdyCars", :'data-toggle' => "modal", :role => 'button' }
+        %b The Nerdy-Car app
+    %p.even Still in development, this app measures the various ways which we spend money on our vehicles. It does      |
+    some math and comes up with an average of how much money you spend on Maintenance, Operation, and Staying Legal.    |
+    Then it makes smart recommendations geared towards saving you money. Cause sometimes, trading in a car that you're  |
+    upside down on can save money. |
 
-#FeralMotion.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
-  .modal-header This is the header
-  .modal-body This is the body
-  .modal-footer This is the footer
+  #NerdyCars.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
+    .modal-header This is the header
+    .modal-body This is the body
+    .modal-footer This is the footer
 
-.span3.clear-well
-  %a{:href => "#NerdyCars", :'data-toggle' => "modal", :role => 'button' }
-    %b The Nerdy-Car app
-  %p.even Still in development, this app considers various conditions that go into the ownership of your car or cars.      |
-  It tallies up an average of how much money you spend on Maintenance, Operation, and Staying Legal, and lets you     |
-  makes smart recommendations geared towards saving you money.                                                        |
-
-#NerdyCars.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
-  .modal-header This is the header
-  .modal-body This is the body
-  .modal-footer This is the footer
-
-%hr.separator.span12
-
-%h4.span12 Preferences
-
-.span3.clear-well
-  %h5 Frameworks
-  %ul.unstyled.span3
-    %li Zend
-    %li Symfony
-    %li Rails
-    %li jQuery
-    %li Bootstrap
-
-.span3.clear-well
-  %h5 Data
-  %ul.unstyled.span3
-    %li MySql
-    %li PostgreSql
-    %li Riak
-    %li Sqlite
-
-.span3.clear-well
-  %h5 Other
-  %ul.unstyled.span3
-    %li Git
-    %li Netbeans
-    %li Oauth
-    %li Linux
-    %li Agile
+%ul.inline.center-rule
+  %li
+    %small Zend
+  %li
+    %small Symfony
+  %li
+    %small Rails
+  %li
+    %small jQuery
+  %li
+    %small Bootstrap
+  %li
+    %small MySql
+  %li
+    %small PostgreSql
+  %li
+    %small Riak
+  %li
+    %small MVC
+  %li
+    %small Send Grid
+  %li
+    %small Sqlite
+  %li
+    %small Git
+  %li
+    %small Netbeans
+  %li
+    %small Oauth
+  %li
+    %small Linux
+  %li
+    %small Agile
+  %li
+    %small VI
+  %li
+    %small REST
+  %li
+    %small OOP
+  %li
+    %small PHP
+  %li
+    %small HAML
+  %li
+    %small ffmpeg
+  %li
+    %small rackspace
 
