@@ -7,7 +7,7 @@
   %small I'm a software engineer living in the Seattle Area
 
 .row
-  .span4.column
+  .span4.column.show-popsalad-stack
     %h4
       %a.column-heading{:href => "#PopSalad", :'data-toggle' => "modal", :role => 'button' }
         %b Pop Salad
@@ -17,11 +17,21 @@
     powerful back-end.                                                                                                  |
 
   #PopSalad.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
-    .modal-header This is the header
-    .modal-body This is the body
-    .modal-footer This is the footer
+    .modal-header
+      %h4 popsalad.com
+      %a{:href => ''} visit site
+    .modal-body
+      .container.span2
+        =image_tag 'logos/popsalad.png'
+      .container.span3
+        %ul
+          %li Over 100,000 unique visits per month
+          %li Real-time fame-market powered by pop media
+          %li Sends a half million content-generated emails per month
+    .modal-footer
+      %button{:class => 'btn', :'data-dismiss' => 'modal', :'aria-hidden' => 'true'} Close
 
-  .span4.column
+  .span4.column.show-feralmotion-stack
     %h4
       %a.column-heading{:href => "#FeralMotion", :'data-toggle' => "modal", :role => 'button' }
         %b Feral Motion
@@ -31,11 +41,21 @@
     your lap, you're sharing that video with your friends.                                                              |
 
   #FeralMotion.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
-    .modal-header This is the header
-    .modal-body This is the body
-    .modal-footer This is the footer
+    .modal-header
+      %h4 feralmotion.com
+      %a{:href => ''} visit site
+    .modal-body
+      .container.span2
+        =image_tag 'logos/feralmotion.png'
+      .container.span3
+        %ul
+          %li Powered by the Zend Framework
+          %li Complete social media site, where users have specific automated videos tied to thier account
+          %li File storage provided by Amazon S3
+    .modal-footer
+      %button{:class => 'btn', :'data-dismiss' => 'modal', :'aria-hidden' => 'true'} Close
 
-  .span4.column
+  .span4.column.show-nerdycar-stack
     %h4
       %a.column-heading{:href => "#NerdyCars", :'data-toggle' => "modal", :role => 'button' }
         %b The Nerdy-Car app
@@ -45,55 +65,66 @@
     upside down on can save money. |
 
   #NerdyCars.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
-    .modal-header This is the header
-    .modal-body This is the body
-    .modal-footer This is the footer
+    .modal-header
+      %h4
+        thenerdycarapp.com
+      %p
+        %i in development
+    .modal-body
+      %ul
+        %li Built on Rails
+        %li devise / cancan / railsadmin
+        %li highcharts
+    .modal-footer
+      %button{:class => 'btn', :'data-dismiss' => 'modal', :'aria-hidden' => 'true'} Close
 
 %ul.inline.center-rule
-  %li
+  %li.zend
     %small Zend
-  %li
+  %li.symfony
     %small Symfony
-  %li
+  %li.rails
     %small Rails
-  %li
+  %li.jquery
     %small jQuery
-  %li
+  %li.bootstrap
     %small Bootstrap
-  %li
+  %li.mysql
     %small MySql
-  %li
+  %li.postgresql
     %small PostgreSql
-  %li
+  %li.riak
     %small Riak
-  %li
+  %li.mvc
     %small MVC
-  %li
+  %li.sendgrid
     %small Send Grid
-  %li
+  %li.sqlite
     %small Sqlite
-  %li
+  %li.git
     %small Git
-  %li
+  %li.netbeans
     %small Netbeans
-  %li
+  %li.oauth
     %small Oauth
-  %li
+  %li.linux
     %small Linux
-  %li
+  %li.agile
     %small Agile
-  %li
+  %li.vi
     %small VI
-  %li
+  %li.rest
     %small REST
-  %li
+  %li.oop
     %small OOP
-  %li
+  %li.php
     %small PHP
-  %li
+  %li.haml
     %small HAML
-  %li
+  %li.ffmpeg
     %small ffmpeg
-  %li
+  %li.rackspace
     %small rackspace
+  %li.aws
+    %small aws
 
