@@ -1,11 +1,11 @@
 .navbar.navbar-inverse.navbar-fixed-top
   .navbar-inner
     .container
-      %a.brand{:href => '/'} My Portfolio
+      %a.brand{:href => '/'} About Me
       %ul.nav.pull-right
         %li{:class => controller.action_name == 'index' ? 'active' : ''}
-          %a{:href => static_index_path} Portfolio
-        %li{:class => controller.action_name == 'contact' ? 'active' : ''}
-          %a{:href => static_contact_path} Contact
+          %a{:href => '/'} Work
         %li{:class => controller.action_name == 'about' ? 'active' : ''}
-          %a{:href => static_about_path} About
+          %a{:href => '/about'} About
+        %li{:class => controller.action_name == 'contact' ? 'active' : ''}
+          %a{:href => '/contact'} Contact
