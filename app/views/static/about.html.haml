@@ -5,7 +5,7 @@
   .span6.well
     %h4 A little about me…
     %p
-      %a.btn.btn-primary.start-slideshow Click to Play
+      %a{:class => 'btn btn-primary start-slideshow', :onclick => "$('.carousel').carousel('next').carousel()"} Click to Play
 
   .span4.well
     #originCarousel.carousel.slide
@@ -37,7 +37,7 @@
         .item
           %img{:src => '/assets/carousel/oregon.jpg'}
           .carousel-caption
-            %p My family likes Washington also.
+            %p My family likes it here also.
         .item
           %img{:src => '/assets/carousel/building.jpg'}
           .carousel-caption
@@ -53,7 +53,7 @@
         .item
           %img{:src => '/assets/carousel/feralmotion.jpg'}
           .carousel-caption
-            %p I helped found feralmotion.
+            %p I helped found Feral Motion.
         .item
           %img{:src => '/assets/carousel/working.jpg'}
           .carousel-caption
