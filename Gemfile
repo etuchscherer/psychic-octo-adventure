@@ -14,7 +14,11 @@ gem 'haml-rails'
 # in production environments by default.
 
 group :development do
-  gem  'libv8'
+  gem 'libv8', '~> 3.11.8'
+  gem 'therubyracer'
+end
+
+group :production do
   gem 'therubyracer'
 end
 
