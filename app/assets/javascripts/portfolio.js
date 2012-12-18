@@ -57,20 +57,20 @@ function centerRuleManager() {
 
     function init(target) {
         $this = $('ul.center-rule');
-        setOriginalColor();
+//        setOriginalColor();
     }
 
-    function setOriginalColor() {
-        originalColor = $this.children().first().css('color');
-    }
+//    function setOriginalColor() {
+//        originalColor = $this.children().first().removeClass('label');
+//    }
 
     function highlightCenterRule(target) {
-        $this.find('li.' + target).css('color', 'red');
+        $this.find('li.' + target).addClass('highlight');
     }
 
     function resetColors() {
         $this.children().each(function() {
-            $(this).css('color', originalColor);
+            $(this).removeClass('highlight');
         })
     }
 
