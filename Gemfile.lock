@@ -127,7 +127,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   less-rails
-  libv8 (~> 3.11.8.3)
+  libv8
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
   therubyracer
