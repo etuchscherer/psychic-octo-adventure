@@ -5,7 +5,7 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
+gem 'thin'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
@@ -13,14 +13,8 @@ gem 'haml-rails'
 # Gems used only for assets and not required
 # in production environments by default.
 
-group :development do
-  gem 'libv8', '~> 3.11.8'
-  gem 'therubyracer'
-end
-
-group :production do
-  gem 'therubyracer'
-end
+gem 'libv8', '~> 3.11.8'
+gem 'therubyracer'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
