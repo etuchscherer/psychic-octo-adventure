@@ -1,0 +1,16 @@
+%form.form-horizontal{:action => '/email'}
+  %fieldset
+    %legend Send me an email
+    .control-group
+      %label.control-label{:for => 'email[To]'} From:
+      .controls
+        %input.input-xlarge{:type => 'text', :name => 'email[To]', :placeholder => 'john doe'}
+        %input.hidden{:name => 'email[Subject]', :value => 'Communication from eric.tuchscherer.me'}
+    .control-group
+      %label.control-label{:for => 'email[Body]'} Body:
+      .controls
+        %textarea.input-xlarge{:placeholder => 'your message…', :rows => 6}
+    .control-group
+      .controls
+        %button.btn.btn-primary.btn-block.span2 Send
+        %button.btn Cancel

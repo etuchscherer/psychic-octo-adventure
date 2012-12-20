@@ -1,9 +1,11 @@
 Portfolio::Application.routes.draw do
 
+  match '/email'   => 'static#email'
   match '/contact' => 'static#contact'
-  match '/about' => 'static#about'
-  match '/' => 'static#index'
+  match '/about'   => 'static#about'
+  match '/'        => 'static#index'
   get "static/index"
+  get "static/email"
   get "static/contact"
   get "static/about"
 

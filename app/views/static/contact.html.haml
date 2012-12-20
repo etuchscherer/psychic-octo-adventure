@@ -1,16 +1,31 @@
-.row.hero-unit
-  %h1 Want to contact me?
-  %h4.indented It's easy… and I'm friendly :)
-  .subheader.pull-right
-    %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
-      %i.linkedin-square.social-icon
-    %a{:href => 'http://www.facebook.com/eric.tuchscherer'}
-      %i.social-icon.facebook-square
-    %a{:href => 'https://twitter.com/e_tuchscherer'}
-      %i.social-icon.twitter-square
-    %a{:href => ''}
-      %i.social-icon.stumbleupon-square
-    %a{:href => ''}
-      %i.social-icon.google-square
-    %a{:href => 'mailto:eric@tuchscherer.me'}
-      %i.social-icon.mail-square
+.tabbable.tabs-left
+  %ul.nav.nav-tabs.span3
+    %li
+      %a{:href => '#tab1', :'data-toggle' => 'tab'} email me
+    %li
+      %a{:href => '#tab2', :'data-toggle' => 'tab'} text me
+    %li
+      %a{:href => '#tab3', :'data-toggle' => 'tab'} contact info
+  .tab-content
+    #tab0.tab-pane.active.hero-unit
+      %h1 Want to contact me?
+      %h4.indented It's easy… and I'm friendly :)
+      -#.subheader.pull-right
+      -#  %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
+      -#    %i.linkedin-square.social-icon
+      -#  %a{:href => 'http://www.facebook.com/eric.tuchscherer'}
+      -#    %i.social-icon.facebook-square
+      -#  %a{:href => 'https://twitter.com/e_tuchscherer'}
+      -#    %i.social-icon.twitter-square
+      -#  %a{:href => ''}
+      -#    %i.social-icon.stumbleupon-square
+      -#  %a{:href => ''}
+      -#    %i.social-icon.google-square
+      -#  %a{:href => 'mailto:eric@tuchscherer.me'}
+      -#    %i.social-icon.mail-square
+    #tab1.tab-pane.span9
+      =render 'forms/email'
+    #tab2.tab-pane.span9
+      %p send me a sms here
+    #tab3.tab-pane.span9
+      %p see my contact info
