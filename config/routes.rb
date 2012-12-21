@@ -1,6 +1,8 @@
 Portfolio::Application.routes.draw do
 
-  match '/email'   => 'static#email'
+  get "email/contact"
+
+  match '/email'   => 'email#contact'
   match '/contact' => 'static#contact'
   match '/about'   => 'static#about'
   match '/'        => 'static#index'

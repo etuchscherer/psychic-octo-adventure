@@ -3,10 +3,10 @@ class ContactForm < ActionMailer::Base
 
   default from: "system@tuchscherer.me"
 
-  def contact_message(from, message)
+  def contact_message(email)
     sendgrid_category 'testing'
     mail :to => 'eric@tuchscherer.me',
-         :subject => 'Sup Boss :-)',
-         :body => "Message sent from: #{from} via eric.tuchscherer.me #{message}"
+         :subject => email['Subject']
+         :body => "Message sent by: #{email['From']} \n via: eric.tuchscherer.me \n \n #{email['Body']}"
   end
 end
