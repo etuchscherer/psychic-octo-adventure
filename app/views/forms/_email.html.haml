@@ -1,6 +1,8 @@
 %form.form-horizontal.contact{:action => '/email', :method => 'POST', :novalidate => 'novalidate'}
   %fieldset
-    %legend Send me an email
+    %legend
+      %h2 Send me an email
+      %small powered by send grid
     .control-group
       %label.control-label{:for => 'from'} From:
       .controls
@@ -12,5 +14,5 @@
         %textarea.input-xlarge{:placeholder => 'your message…', :name => 'body', :rows => 3, :required => 'true'}
     .control-group
       .controls
-        %button.btn.btn-primary.btn-block.span2 Send
-        %button.btn Cancel
+        %button.btn.btn-primary.span2 Send
+        =link_to 'Cancel', '/contact', {:class => 'btn'}

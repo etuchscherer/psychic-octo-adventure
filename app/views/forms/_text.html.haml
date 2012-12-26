@@ -1,0 +1,13 @@
+%form.form-horizontal.sms{:action => '/sms', :method => 'POST', :novalidate => 'novalidate'}
+  %fieldset
+    %legend
+      %h1 Send me a text message
+      %small powered by twilio
+    .control-group
+      %label.control-label{:for => 'message'} Message
+      .controls
+        %textarea.input-xlarge{:rows => 3, :name => 'message', :placeholder => 'your message…'}
+    .control-group
+      .controls
+        %button.btn.btn-primary.span2 Send
+        =link_to 'Cancel', '/contact', {:class => 'btn'}
