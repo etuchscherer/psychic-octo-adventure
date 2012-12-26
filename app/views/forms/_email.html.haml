@@ -1,15 +1,15 @@
-%form.form-horizontal{:action => '/email', :method => 'POST'}
+%form.form-horizontal.contact{:action => '/email', :method => 'POST', :novalidate => 'novalidate'}
   %fieldset
     %legend Send me an email
     .control-group
-      %label.control-label{:for => 'email[From]'} From:
+      %label.control-label{:for => 'from'} From:
       .controls
-        %input.input-xlarge{:type => 'text', :name => 'email[From]', :placeholder => 'john doe'}
-        %input.hidden{:name => 'email[Subject]', :value => 'Communication from eric.tuchscherer.me'}
+        %input.input-xlarge{:type => 'text', :name => 'from', :placeholder => 'john@doe.com', :required => 'true', :email => 'true'}
+        %input.hidden{:name => 'subject', :value => 'Communication from eric.tuchscherer.me'}
     .control-group
-      %label.control-label{:for => 'email[Body]'} Body:
+      %label.control-label{:for => 'body'} Body:
       .controls
-        %textarea.input-xlarge{:placeholder => 'your message…', :name => 'email[Body]', :rows => 6}
+        %textarea.input-xlarge{:placeholder => 'your message…', :name => 'body', :rows => 3, :required => 'true'}
     .control-group
       .controls
         %button.btn.btn-primary.btn-block.span2 Send

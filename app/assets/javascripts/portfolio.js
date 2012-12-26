@@ -1,3 +1,16 @@
+$().ready(function(){
+    $('form.contact').validate({
+        highlight: function(label) {
+            $(label).closest('.control-group').addClass('error');
+        },
+        success: function(label) {
+            label
+                .text('OK!').addClass('valid')
+                .closest('.control-group').addClass('success');
+        }
+    });
+});
+
 $(document).ready(function(){
 
     var data        = new appStackMap(),
