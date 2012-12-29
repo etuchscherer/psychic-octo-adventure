@@ -1,31 +1,46 @@
-.tabbable.tabs-left
-  %ul.nav.nav-tabs.span3
+.hero-unit.embossed
+  %h1
+    %small I'm friendly…
+    contact me :-)
+
+.tabbable
+  %ul.nav.nav-tabs
+    %li.active
+      %a{:href => '#email', :'data-toggle' => 'tab'} email
     %li
-      %a{:href => '#tab1', :'data-toggle' => 'tab'} email me
+      %a{:href => '#sms', :'data-toggle' => 'tab'} sms
     %li
-      %a{:href => '#tab2', :'data-toggle' => 'tab'} text me
-    %li
-      %a{:href => '#tab3', :'data-toggle' => 'tab'} contact info
+      %a{:href => '#info', :'data-toggle' => 'tab'} info
+  -#.subheader.pull-right
+  -#  %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
+  -#    %i.linkedin-square.social-icon
+  -#  %a{:href => 'http://www.facebook.com/eric.tuchscherer'}
+  -#    %i.social-icon.facebook-square
+  -#  %a{:href => 'https://twitter.com/e_tuchscherer'}
+  -#    %i.social-icon.twitter-square
+  -#  %a{:href => ''}
+  -#    %i.social-icon.stumbleupon-square
+  -#  %a{:href => ''}
+  -#    %i.social-icon.google-square
+  -#  %a{:href => 'mailto:eric@tuchscherer.me'}
+  -#    %i.social-icon.mail-square
+
+.row
   .tab-content
-    #tab0.tab-pane.active.hero-unit
-      %h1 Want to contact me?
-      %h4.indented It's easy… and I'm friendly :)
-      -#.subheader.pull-right
-      -#  %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
-      -#    %i.linkedin-square.social-icon
-      -#  %a{:href => 'http://www.facebook.com/eric.tuchscherer'}
-      -#    %i.social-icon.facebook-square
-      -#  %a{:href => 'https://twitter.com/e_tuchscherer'}
-      -#    %i.social-icon.twitter-square
-      -#  %a{:href => ''}
-      -#    %i.social-icon.stumbleupon-square
-      -#  %a{:href => ''}
-      -#    %i.social-icon.google-square
-      -#  %a{:href => 'mailto:eric@tuchscherer.me'}
-      -#    %i.social-icon.mail-square
-    #tab1.tab-pane.span9
-      =render 'forms/email'
-    #tab2.tab-pane.span9
-      =render 'forms/text'
-    #tab3.tab-pane.span9
-      %p see my contact info
+    .tab-pane.active#email
+      .span3.well.even
+        %p Yes sir! (or mam), you can fire off a good ol'fashioned electronic mail.
+        %p Powered by Send Grid, this puppy is sure to make it to my inbox in seconds.
+        %p Just make sure you remember to tell me who you are, otherwise I'll never know who to reply to. :-)
+      .span8
+        =render 'forms/email'
+    .tab-pane#sms
+      .span3.well.even
+        %p Cant wait for me to check my inbox? You're so impatient!
+        %p This itty-bitty form runs off of twilio. It beams messages directly to cellular device.
+        %p Notice how I dont have to show you my digits. Just remember to tell me who you are, and how to reply to you. Otherwise I'll just look lime my portfolio got lonely.
+      .span8
+        =render 'forms/text'
+    .tab-pane#info
+      .span.well.even
+        %p see my contact info

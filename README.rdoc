@@ -2,4 +2,4 @@
 
 My portfolio. Built on rails. Not very happy with less, Heroku doesn't seem to like
 the rubyracer or the libv8 gem. Next time, use sass. Emails powered by sendgrid,
-SMS with twilio. 
+SMS with twilio.

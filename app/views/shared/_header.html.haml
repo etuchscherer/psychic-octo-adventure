@@ -1,10 +1,12 @@
 .navbar.navbar-inverse.navbar-fixed-top
   .navbar-inner
     .container
-      %a.brand{:href => '/'} About Me
+      %a.brand{:href => '/'}
+        Eric Tuchscherer
+        %small { tu • cher • er }
       %ul.nav.pull-right
         %li{:class => controller.action_name == 'index' ? 'active' : ''}
-          %a{:href => '/'} Work
+          %a{:href => '/work'} Work
         %li{:class => controller.action_name == 'about' ? 'active' : ''}
           %a{:href => '/about'} About
         %li{:class => controller.action_name == 'contact' ? 'active' : ''}
