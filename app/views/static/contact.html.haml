@@ -12,19 +12,6 @@
       %a{:href => '#sms', :'data-toggle' => 'tab'} sms
     %li
       %a{:href => '#info', :'data-toggle' => 'tab'} info
-  -#.subheader.pull-right
-  -#  %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
-  -#    %i.linkedin-square.social-icon
-  -#  %a{:href => 'http://www.facebook.com/eric.tuchscherer'}
-  -#    %i.social-icon.facebook-square
-  -#  %a{:href => 'https://twitter.com/e_tuchscherer'}
-  -#    %i.social-icon.twitter-square
-  -#  %a{:href => ''}
-  -#    %i.social-icon.stumbleupon-square
-  -#  %a{:href => ''}
-  -#    %i.social-icon.google-square
-  -#  %a{:href => 'mailto:eric@tuchscherer.me'}
-  -#    %i.social-icon.mail-square
 
 .row
   .tab-content.span12
@@ -33,5 +20,22 @@
     .tab-pane#sms
       =render 'forms/text'
     .tab-pane#info
-      .span.well.even
-        %p see my contact info
+      %h3.page-header
+        = mail_to 'eric@tuchscherer.me', 'Eric Tuchscherer'
+
+      %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
+        %i.linkedin-square.social-icon
+      %a{:href => 'http://www.facebook.com/eric.tuchscherer'}
+        %i.social-icon.facebook-square
+      %a{:href => 'https://twitter.com/e_tuchscherer'}
+        %i.social-icon.twitter-square
+      %a{:href => ''}
+        %i.social-icon.stumbleupon-square
+      %a{:href => ''}
+        %i.social-icon.google-square
+      %a{:href => 'mailto:eric@tuchscherer.me'}
+        %i.social-icon.mail-square
+
+      %h4 360.362.0407
+      %h4
+
