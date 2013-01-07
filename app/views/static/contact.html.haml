@@ -6,22 +6,22 @@
 
 .tabbable
   %ul.nav.nav-tabs
-    %li.active
+    %li
       %a{:href => '#email', :'data-toggle' => 'tab'} email
     %li
       %a{:href => '#sms', :'data-toggle' => 'tab'} sms
-    %li
+    %li.active
       %a{:href => '#info', :'data-toggle' => 'tab'} info
 
 .row
   .tab-content.span12
-    .tab-pane.active#email
+    .tab-pane#email
       =render 'forms/email'
     .tab-pane#sms
       =render 'forms/text'
-    .tab-pane#info
+    .tab-pane.active#info
       %h3.page-header
-        = mail_to 'eric@tuchscherer.me', 'Eric Tuchscherer'
+        = mail_to 'eric@tuchscherer.me', 'Eric Tuchscherer', {:class => 'column-heading'}
 
       %a{:href => 'http://www.linkedin.com/in/tuchscherer'}
         %i.linkedin-square.social-icon

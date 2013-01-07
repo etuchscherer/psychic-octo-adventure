@@ -24,7 +24,14 @@ $(document).ready(function(){
         })
     }, function(){
         ruleManager.resetColors();
-    })
+    });
+
+    $('.image-heading').hover(
+        function() {
+            $(this).stop().addClass('active');
+        }, function() {
+            $(this).stop().removeClass('active');
+    });
 
     $('div.show-feralmotion-stack').hover(function() {
         data.feralmotionStack.map(function(i) {
@@ -41,7 +48,7 @@ $(document).ready(function(){
     }, function() {
         ruleManager.resetColors();
     })
-})
+});
 
 var appStackMap = function() {
     this.popsaladStack = new Array(

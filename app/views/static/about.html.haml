@@ -4,62 +4,119 @@
     %br
     %small find out more
 
+%h3.page-header
+  my personal story
+
 .row
-  .span6.well.embossed.offset3
-    #originCarousel.carousel.slide
-      .carousel-inner{:style => 'overflow:hidden;display:block;position:relative;width:100%'}
-        .active.item
-          %img{:src => '/assets/carousel/kentucky.jpg'}
-          .carousel-caption
-            %p I was born in Louisville, Ky…
-        .item
-          %img{:src => '/assets/carousel/grandparents.jpg'}
-          .carousel-caption
-            %p and raised by my grandparents in New Jersey.
-        .item
-          %img{:src => '/assets/carousel/newyork.jpg'}
-          .carousel-caption
-            %p Looking south from the Empire State Building.
-        .item
-          %img{:src => '/assets/carousel/qatar.jpg'}
-          .carousel-caption
-            %p I joined the navy when I was 20…
-        .item
-          %img{:src => '/assets/carousel/songbukdong.jpg'}
-          .carousel-caption
-            %p It gave me the opportunity to travel the world at a young age.
-        .item
-          %img{:src => '/assets/carousel/ranier.jpg'}
-          .carousel-caption
-            %p I fell in love with Washington, and decided to settle here.
-        .item
-          %img{:src => '/assets/carousel/oregon.jpg'}
-          .carousel-caption
-            %p My family likes it here also.
-        .item
-          %img{:src => '/assets/carousel/building.jpg'}
-          .carousel-caption
-            %p I like building things,
-        .item
-          %img{:src => '/assets/carousel/hiking.jpg'}
-          .carousel-caption
-            %p and hiking in the summertime.
-        .item
-          %img{:src => '/assets/carousel/winter.jpg'}
-          .carousel-caption
-            %p In the winter, you'll catch me snowboarding at every opportunity.
-        .item
-          %img{:src => '/assets/carousel/feralmotion.jpg'}
-          .carousel-caption
-            %p I helped found Feral Motion.
-        .item
-          %img{:src => '/assets/carousel/working.jpg'}
-          .carousel-caption
-            %p And was employee #1 at Salad Labs.
-        .item
-          %img{:src => '/assets/carousel/more.png'}
-          .carousel-caption
-            %h4
-              =link_to 'click here', 'contact'
-      .carousel-control.left{:href => '#originCarousel', :'data-slide' => 'prev'} &lsaquo;
-      .carousel-control.right{:href => '#originCarousel', :'data-slide' => 'next'} &rsaquo;
+  %dl.dl
+    %span.span2.image-heading
+      %dt I was born in Louisville, Ky.
+      %dd
+      =image_tag('carousel/kentucky.jpg')
+    %span.span2.image-heading
+      %dt and raised by my grandparents in New Jersey.
+      %dd
+      =image_tag('carousel/grandparents.jpg')
+    %span.span2.image-heading
+      %dt Looking south from the Empire State Building
+      %dd
+      =image_tag('carousel/newyork.jpg')
+    %span.span2.image-heading
+      %dt At 20, I joined the navy, and specialized in avionics.
+      %dd
+      =image_tag('carousel/qatar.jpg')
+    %span.span2.image-heading
+      %dt It gave me the opportunity to travel the world.
+      %dd
+      =image_tag('carousel/songbukdong.jpg')
+    %span.span2.image-heading
+      %dt I fell in love with Washington, and decided to settle here.
+      %dd
+      =image_tag('carousel/ranier.jpg')
+
+.row
+  %dl.dl
+    %span.span2.image-heading
+      %dt My family loves Washington also.
+      %dd
+      =image_tag 'carousel/oregon.jpg'
+    %span.span2.image-heading
+      %dt In my spare time, I enjoy building things
+      %dd
+      =image_tag 'carousel/building.jpg'
+    %span.span2.image-heading
+      %dt and hiking in the summertime
+      %dd
+      =image_tag 'carousel/hiking.jpg'
+    %span.span2.image-heading
+      %dt I go snowboarding at every available opportunity
+      %dd
+      =image_tag 'carousel/winter.jpg'
+    %span.span2.image-heading
+      %dt I helped found feral motion
+      %dd
+      =image_tag 'carousel/feralmotion.jpg'
+    %span.span2.image-heading
+      %dt  and was the first employee hired on at Salad Labs.
+      %dd
+      =image_tag 'carousel/working.jpg'
+
+-#.row
+-#  .span6.well.embossed.offset3
+-#    #originCarousel.carousel.slide
+-#      .carousel-inner{:style => 'overflow:hidden;display:block;position:relative;width:100%'}
+-#        .active.item
+-#          %img{:src => '/assets/carousel/kentucky.jpg'}
+-#          .carousel-caption
+-#            %p I was born in Louisville, Ky…
+-#        .item
+-#          %img{:src => '/assets/carousel/grandparents.jpg'}
+-#          .carousel-caption
+-#            %p and raised by my grandparents in New Jersey.
+-#        .item
+-#          %img{:src => '/assets/carousel/newyork.jpg'}
+-#          .carousel-caption
+-#            %p Looking south from the Empire State Building.
+-#        .item
+-#          %img{:src => '/assets/carousel/qatar.jpg'}
+-#          .carousel-caption
+-#            %p I joined the navy when I was 20…
+-#        .item
+-#          %img{:src => '/assets/carousel/songbukdong.jpg'}
+-#          .carousel-caption
+-#            %p It gave me the opportunity to travel the world at a young age.
+-#        .item
+-#          %img{:src => '/assets/carousel/ranier.jpg'}
+-#          .carousel-caption
+-#            %p I fell in love with Washington, and decided to settle here.
+-#        .item
+-#          %img{:src => '/assets/carousel/oregon.jpg'}
+-#          .carousel-caption
+-#            %p My family likes it here also.
+-#        .item
+-#          %img{:src => '/assets/carousel/building.jpg'}
+-#          .carousel-caption
+-#            %p I like building things,
+-#        .item
+-#          %img{:src => '/assets/carousel/hiking.jpg'}
+-#          .carousel-caption
+-#            %p and hiking in the summertime.
+-#        .item
+-#          %img{:src => '/assets/carousel/winter.jpg'}
+-#          .carousel-caption
+-#            %p In the winter, you'll catch me snowboarding at every opportunity.
+-#        .item
+-#          %img{:src => '/assets/carousel/feralmotion.jpg'}
+-#          .carousel-caption
+-#            %p I helped found Feral Motion.
+-#        .item
+-#          %img{:src => '/assets/carousel/working.jpg'}
+-#          .carousel-caption
+-#            %p And was employee #1 at Salad Labs.
+-#        .item
+-#          %img{:src => '/assets/carousel/more.png'}
+-#          .carousel-caption
+-#            %h4
+-#              =link_to 'click here', 'contact'
+-#      .carousel-control.left{:href => '#originCarousel', :'data-slide' => 'prev'} &lsaquo;
+-#      .carousel-control.right{:href => '#originCarousel', :'data-slide' => 'next'} &rsaquo;
