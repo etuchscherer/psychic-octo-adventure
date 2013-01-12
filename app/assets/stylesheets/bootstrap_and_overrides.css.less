@@ -118,7 +118,7 @@ label.error {
 a.btn-embossed, .embossed {
   text-align: center;
   background-color: #333;
-  color: #999;
+  color: #BBB;
   padding: 60px 0px;
   font-size: 40px;
   font-weight: bold;
@@ -129,7 +129,7 @@ a.btn-embossed, .embossed {
   background: -moz-linear-gradient(top, #333 3%, #222 4%, #111 100%); /* firefox */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#333), color-stop(4%,#222), color-stop(100%,#111)); /* webkit */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333', endColorstr='#111',GradientType=0 ); /* ie */
-  text-shadow:        1px 1px 2px #000;
+  text-shadow:        0px -2px 3px rgba(153, 153, 153, .5);
   -moz-box-shadow:    inset 0 1px 0 #ccc, 0 1px 5px #666;
   -moz-box-shadow:    inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 10px rgba(0,0,0,0.3);
   -webkit-box-shadow: inset 0 1px 0 #ccc, 0 1px 5px #666;
@@ -151,6 +151,9 @@ a.btn-embossed:hover {
   text-decoration: none;
 }
 
+.no-shadow {
+  text-shadow: none;
+}
 .image-heading dt {
   margin-bottom: 10px;
   text-align: left;
@@ -158,6 +161,10 @@ a.btn-embossed:hover {
 
 .image-heading dd {
   margin-left: 0;
+}
+
+.brand.active {
+  color: #FFF;
 }
 
 .image-heading.active img {

@@ -1,11 +1,11 @@
 .navbar.navbar-inverse.navbar-fixed-top
   .navbar-inner
     .container
-      %a.brand{:href => '/'}
+      %a.brand{:href => '/', :class => controller.action_name == 'index' ? 'active' : '' }
         Eric Tuchscherer
         %small { tu · cher · er }
       %ul.nav.pull-right
-        %li{:class => controller.action_name == 'index' ? 'active' : ''}
+        %li{:class => controller.action_name == 'work' ? 'active' : ''}
           %a{:href => '/work'} Work
         %li{:class => controller.action_name == 'about' ? 'active' : ''}
           %a{:href => '/about'} About
