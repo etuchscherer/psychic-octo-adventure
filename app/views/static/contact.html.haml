@@ -8,7 +8,7 @@
   %ul.nav.nav-tabs
     %li
       %a{:href => '#email', :'data-toggle' => 'tab'} email
-    %li
+    -#%li
       %a{:href => '#sms', :'data-toggle' => 'tab'} sms
     %li.active
       %a{:href => '#info', :'data-toggle' => 'tab'} info
@@ -17,7 +17,7 @@
   .tab-content.span12
     .tab-pane#email
       =render 'forms/email'
-    .tab-pane#sms
+    -#.tab-pane#sms
       =render 'forms/text'
     .tab-pane.active#info
       %h2.page-header
