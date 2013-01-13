@@ -1,13 +1,13 @@
 .navbar.navbar-inverse.navbar-fixed-top
   .navbar-inner
     .container
-      %a.brand{:href => '/', :class => controller.action_name == 'index' ? 'active' : '' }
+      %a.brand.hover-glow{:href => '/', :class => controller.action_name == 'index' ? 'active' : '' }
         Eric Tuchscherer
         %small { tu · cher · er }
       %ul.nav.pull-right
         %li{:class => controller.action_name == 'work' ? 'active' : ''}
-          %a{:href => '/work'} Work
+          %a.hover-glow{:href => '/work'} Work
         %li{:class => controller.action_name == 'about' ? 'active' : ''}
-          %a{:href => '/about'} About
+          %a.hover-glow{:href => '/about'} About
         %li{:class => controller.action_name == 'contact' ? 'active' : ''}
-          %a{:href => '/contact'} Contact
+          %a.hover-glow{:href => '/contact'} Contact
