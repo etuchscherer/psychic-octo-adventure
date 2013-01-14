@@ -32,6 +32,7 @@
 // @linkColor: #ff0000;
 body {
   padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+  background: url('bg/paper.jpg');
 }
 
 .subheader {
@@ -89,7 +90,7 @@ ul.center-rule li.highlight * {
 
 .even {
   margin-top: 20px;
-  height: 200px;
+  height: 160px;
   text-align: justify;
 }
 
@@ -117,8 +118,7 @@ label.error {
 
 a.btn-embossed, .embossed {
   text-align: center;
-  background-color: #333;
-  color: #BBB;
+  background: url('bg/pre.png');
   padding: 60px 0px;
   font-size: 40px;
   font-weight: bold;
@@ -126,9 +126,6 @@ a.btn-embossed, .embossed {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   border: 1px solid #222;
-  background: -moz-linear-gradient(top, #000 0%, #333 100%); /* firefox */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#333)); /* webkit */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#333',GradientType=0 ); /* ie */
   -moz-box-shadow:    inset 0 1px 0 #ccc, 0 1px 5px #666;
   -moz-box-shadow:    inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 10px rgba(0,0,0,0.3);
   -webkit-box-shadow: inset 0 1px 0 #ccc, 0 1px 5px #666;
@@ -138,7 +135,12 @@ a.btn-embossed, .embossed {
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
 }
 
-a.hover-glow {
+.letterpress, h1.letterpress {
+  color: rgba(0,0,0,.6);
+  text-shadow: 0px 1px 1px #4d4d4d;
+}
+
+.hover-glow {
   transition:color 1s, text-shadow, .5s;
   -moz-transition:color 1s, text-shadow, .5s; /* Firefox 4 */
   -webkit-transition:color 1s, text-shadow, .5s; /* Safari and Chrome */
@@ -150,6 +152,18 @@ a.hover-glow:hover {
   text-shadow: 0 3px 3px rgba(255, 255, 255, .5), 0 -3px 3px rgba(255, 255, 255, .5);
 }
 
+.hover-dark-glow {
+  transition: text-shadow .4s;
+  -moz-transition: text-shadow .4s;
+  -webkit-transition: text-shadow .4s;
+  -o-transition: text-shadow .4s;
+}
+
+a.hover-dark-glow:hover {
+  text-decoration: none;
+  text-shadow: 0 2px 2px rgba(0,0,0,.3), 0 -2px 2px rgba(0,0,0,0.3);
+}
+
 a.btn-embossed:hover {
   text-decoration: none;
 }
@@ -157,6 +171,7 @@ a.btn-embossed:hover {
 .no-shadow {
   text-shadow: none;
 }
+
 .image-heading dt {
   margin-bottom: 10px;
   text-align: left;
