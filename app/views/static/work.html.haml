@@ -56,23 +56,22 @@
   .span4.column.show-nerdycar-stack
     %h4
       %a.hover-dark-glow.column-heading{:href => "#NerdyCars", :'data-toggle' => "modal", :role => 'button' }
-        %b The Nerdy-Car app
-    %p.even Still in development, this app measures the various ways which we spend money on our vehicles. It does      |
-    some math and comes up with an average of how much money you spend on Maintenance, Operation, and Staying Legal.    |
-    Then it makes smart recommendations geared towards saving you money. Cause sometimes, trading in a car that you're  |
-    upside down on can save money. |
+        %b USAirbag.com
+    %p.even Still in development, this specialized app works with RFID wristbands to identify who has paid to jump into |
+    a giant airbag, and who has not. It features a private API to work with NFC compliant android devices, and an       |
+    emergency contact feature, where employees can scan the wristband of a downed rider, and get emergency contact      |
+    information.
 
   #NerdyCars.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
     .modal-header
       %h4
-        thenerdycarapp.com
+        USAirbag.com
       %p
         %i in development
     .modal-body
       %ul
         %li Built on Rails
         %li devise / cancan / railsadmin
-        %li highcharts
     .modal-footer
       %button{:class => 'btn', :'data-dismiss' => 'modal', :'aria-hidden' => 'true'} Close
 %br
