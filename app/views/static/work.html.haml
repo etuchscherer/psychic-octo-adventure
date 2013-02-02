@@ -56,22 +56,23 @@
   .span4.column.show-nerdycar-stack
     %h4
       %a.hover-dark-glow.column-heading{:href => "#NerdyCars", :'data-toggle' => "modal", :role => 'button' }
-        %b USAirbag.com
-    %p.even Still in development, this specialized app works with RFID wristbands to identify who has paid to jump into |
-    a giant airbag, and who has not. It features a private API to work with NFC compliant android devices, and an       |
-    emergency contact feature, where employees can scan the wristband of a downed rider, and get emergency contact      |
-    information.
+        %b undisclosed customer
+    %p.even Still in development, this specialized app works with RFID wristbands to identify who has paid to enter a restricted |
+    area, and who has not. It features a private API to work with NFC compliant devices, and an       |
+    emergency contact feature, where employees can scan wristbands of clients, to quickly retrieve information. |
+    The customer has requirested to remain undisclosed until release. |
 
   #NerdyCars.modal.hide.fade.in{:tabindex => '-1', :role => 'dialog'}
     .modal-header
       %h4
-        USAirbag.com
+        \- undiscloded
       %p
         %i in development
     .modal-body
       %ul
         %li Built on Rails
         %li devise / cancan / railsadmin
+        %li more information after release
     .modal-footer
       %button{:class => 'btn', :'data-dismiss' => 'modal', :'aria-hidden' => 'true'} Close
 %br
